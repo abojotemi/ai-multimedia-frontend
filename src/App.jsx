@@ -43,10 +43,7 @@ const App = () => {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="upload" element={<Upload />} />
             <Route path="ai-processing" element={<AIProcessing />} />
-            {/* <Route path="search" element={<Search />} />
-            <Route path="collection" element={<Collection />} /> */}
             <Route path="settings" element={<Settings />} />
-            {/* <Route path="faq" element={<div>FAQ Page</div>} /> */}
           </Route>
         </Route>
         
