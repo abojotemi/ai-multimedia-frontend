@@ -18,7 +18,7 @@ vi.mock('axios', () => ({
 describe('API Configuration', () => {
   it('should create axios instance with correct base URL', () => {
     expect(axios.create).toHaveBeenCalledWith({
-      baseURL: "http://localhost:8000/api",
+      baseURL: "https://ai-multimedia-backend.onrender.com/api",
       withCredentials: true
     });
   });
