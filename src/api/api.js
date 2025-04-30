@@ -22,7 +22,7 @@ const onTokenRefreshFailed = (error) => {
 };
 
 // API base URL - use relative URL for the proxy to work
-const API_BASE_URL = "/api";
+const API_BASE_URL = "https://ai-multimedia-backend.onrender.com/api";
 
 const api = axios.create({
     baseURL: API_BASE_URL,
