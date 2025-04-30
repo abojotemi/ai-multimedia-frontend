@@ -8,7 +8,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://ai-multimedia-backend.onrender.com',
+        target: 'https://ai-multimedia-backend.onrender.com/',
         changeOrigin: true,
         secure: false,
       }

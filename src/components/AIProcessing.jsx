@@ -21,7 +21,6 @@ import {
 import { mediaService, aiService } from "../api/apiService";
 import ProcessingResults from "./ProcessingResults";
 import useAiStore from "../store/aiStore";
-
 export default function AIProcessing() {
   // Add a key to force component remounting when we need to reset state
   const [componentKey, setComponentKey] = useState(Date.now());
