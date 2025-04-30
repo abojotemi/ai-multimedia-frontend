@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+/* Migrate your `theme.extend.colors` and `fontFamily` from JS to CSS */
+@theme {
+  /* Colors */
+  --color-jasper: #db5a42;
+  --color-jasper-50:  hsl(9 68% 96%);
+  --color-jasper-100: hsl(9 68% 88%);
+  --color-jasper-200: hsl(9 68% 80%);
+  --color-jasper-300: hsl(9 68% 72%);
+  --color-jasper-400: hsl(9 68% 64%);
+  --color-jasper-500: hsl(9 68% 56%); /* base */
+  --color-jasper-600: hsl(9 68% 48%);
+  --color-jasper-700: hsl(9 68% 40%);
+  --color-jasper-800: hsl(9 68% 32%);
+  --color-jasper-900: hsl(9 68% 24%);
+  --color-dark: #24252D;
+  --color-gray-light: #f7f7f7;
+  --color-gray-dark: #1e1e1e;
+  --color-internet-blue: #648eef;
+  --color-internet-blue-hover: #336AEA;
+  --color-sidebar-bg: #24252D;
+  --color-white-5: rgba(255, 255, 255, 0.05);
+  --color-white-10: rgba(255, 255, 255, 0.1);
+  --color-white-20: rgba(255, 255, 255, 0.2);
+  --color-white-80: rgba(255, 255, 255, 0.8);
+
+  /* Font families */
+  --font-family-gilroy: "Gilroy", sans-serif;
+  --font-family-inter: "Inter", sans-serif;
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Custom transitions */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* <style jsx>{` */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes fadeInUp {
+    from { 
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to { 
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fadeIn {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+  
+  .animate-fadeInUp {
+    animation: fadeInUp 0.5s ease-out forwards;
+  }
+  
+  .animation-delay-100 {
+    animation-delay: 100ms;
+  }
+  
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+  
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+  
+  .animation-delay-500 {
+    animation-delay: 500ms;
+  }
+
+/* Add to your CSS */
+html, body, #root {
+  height: 100%;
+  overflow: hidden;
+}
