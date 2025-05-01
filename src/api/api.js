@@ -85,7 +85,7 @@ api.interceptors.response.use(
                 } catch (refreshError) {
                     // If token refresh failed, redirect to login
                     localStorage.removeItem("accessToken");
-                    window.location.href = "/login";
+                    window.location.href = "/";
                     return Promise.reject(refreshError);
                 }
             }
@@ -126,7 +126,7 @@ api.interceptors.response.use(
                 onTokenRefreshFailed(refreshError);
                 isRefreshing = false;
                 localStorage.removeItem("accessToken");
-                window.location.href = "/login";
+                window.location.href = "/";
                 return Promise.reject(refreshError);
             }
         }

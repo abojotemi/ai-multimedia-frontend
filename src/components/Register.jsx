@@ -53,7 +53,7 @@ const Register = () => {
     const result = await register(registerData);
     
     if (result.success) {
-      navigate('/login');
+      navigate('/');
     }
   };
   
@@ -178,7 +178,7 @@ const Register = () => {
 
         <p className="mt-10 text-center text-sm text-gray-500">
           Already have an account?{' '}
-          <Link to="/login" className="font-semibold leading-6 text-jasper-600 hover:text-jasper-500">
+          <Link to="/" className="font-semibold leading-6 text-jasper-600 hover:text-jasper-500">
             Sign in
           </Link>
         </p>

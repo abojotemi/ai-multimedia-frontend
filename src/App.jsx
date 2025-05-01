@@ -40,7 +40,7 @@ const App = () => {
 
         <Route element={<ProtectedRoute />}>
           <Route element={<DashboardLayout />}>
-            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="dashboard" element={<Dashboard />} />
             <Route path="upload" element={<Upload />} />
             <Route path="ai-processing" element={<AIProcessing />} />
             <Route path="settings" element={<Settings />} />
