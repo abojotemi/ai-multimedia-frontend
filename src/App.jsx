@@ -9,7 +9,6 @@ import MainLayout from "./layouts/MainLayout";
 import AuthLayout from "./layouts/AuthLayout";
 import ProtectedRoute from "./utils/ProtectedRoutes";
 import Dashboard from "./components/Dashboard";
-import Search from "./components/Search";
 import AIProcessing from "./components/AIProcessing";
 import DashboardLayout from "./layouts/DashboardLayout";
 import useAuthStore from "./store/authStore";
